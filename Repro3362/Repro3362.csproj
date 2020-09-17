@@ -10,5 +10,9 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
     </ItemGroup>
+    
+    <Target Name="PrintDebugInfo" BeforeTargets="Build">
+        <Message Importance="high" Text="DeterministicSourcePaths is set to: $(DeterministicSourcePaths)" />
+    </Target>
 
 </Project>
